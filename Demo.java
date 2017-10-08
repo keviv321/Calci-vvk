@@ -28,7 +28,7 @@ public class Demo implements ActionListener{
 	private BigInteger nmbr1,nmbr2,result;
 	private BigDecimal decnum1,decnum2,resultt;
 
-	private byte addc=0,subc=0,divc=0,mulc=0;
+	private byte addc=0,subc=0,divc=0,mulc=0,eql=0;
 
 	private Container c;
 
@@ -63,6 +63,7 @@ public class Demo implements ActionListener{
 		frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		frame1.setBounds(100,100,540,600);
+		frame1.setResizable(false);
 		c=frame1.getContentPane();
 		c.setLayout(null);
 		//frame1.add(panel);
@@ -155,53 +156,93 @@ public class Demo implements ActionListener{
 		String t;
 		if(source==btn1)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"1");
+			if (eql==1)
+			{txtfield.setText("1");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"1");
+			}
 		}
 		if(source==btn2)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"2");
+			if (eql==1)
+			{txtfield.setText("2");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"2");
+			}
 		}
 		if(source==btn3)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"3");
+			if (eql==1)
+			{txtfield.setText("3");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"3");
+			}
 		}
 		if(source==btn4)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"4");
+			if (eql==1)
+			{txtfield.setText("4");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"4");
+			}
 		}
 		if(source==btn5)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"5");
+			if (eql==1)
+			{txtfield.setText("5");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"5");
+			}
 		}
 		if(source==btn6)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"6");
+			if (eql==1)
+			{txtfield.setText("6");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"6");
+			}
 		}
 		if(source==btn7)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"7");
+			if (eql==1)
+			{txtfield.setText("7");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"7");
+			}
 		}
 		if(source==btn8)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"8");
+			if (eql==1)
+			{txtfield.setText("8");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"8");
+			}
 		}
 		if(source==btn9)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"9");
+			if (eql==1)
+			{txtfield.setText("9");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"9");
+			}
 		}
 		if(source==btn0)
 		{
-			t=txtfield.getText();
-			txtfield.setText(t+"0");
+			if (eql==1)
+			{txtfield.setText("0");eql=0;}
+			else{
+				t=txtfield.getText();
+				txtfield.setText(t+"0");
+			}
 		}
 		if(source==btndot)
 		{
@@ -301,6 +342,7 @@ public class Demo implements ActionListener{
 		}
 		if (source==btnequls)
 		{
+			eql=1;
 			if(txtfield.getText().indexOf('.')==-1)
 				nmbr2=Number_Reader();
 			else
