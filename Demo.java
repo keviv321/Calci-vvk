@@ -1,3 +1,7 @@
+/*
+ * wrritten by @vivek_kumar
+ */
+
 package swing_sample;
 
 import java.awt.Color;
