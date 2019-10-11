@@ -1,2 +1,2 @@
-# Calci-vvk
-Four Function Calculator 
+# Calculator-vvk
+Basic Four Function Calculator based on JAVA
