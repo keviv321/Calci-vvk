@@ -1,5 +1,5 @@
 /*
- * wrritten by @vivek_kumar
+ * written by @vivek_kumar
  */
 
 package swing_sample;
